@@ -1,8 +1,7 @@
-#U.B.E.T-Understanding-Botanical-Essentials-for-Thriving
+U.B.E.T-Understanding-Botanical-Essentials-for-Thriving
 
-
-#Overview:
-#This program helps users learn how to take care of different groups of plants. The user chooses a plant group and gives the plant’s environmental condition. The program then provides information on how to keep the plant alive and thriving.
+Overview:
+This program helps users learn how to take care of different groups of plants. The user chooses a plant group and gives the plant’s environmental condition. The program then provides information on how to keep the plant alive and thriving.
 
 Features:
 Shows a menu of plant groups.
