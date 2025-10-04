@@ -1,7 +1,9 @@
-mport time
+import time
+
+plant_categories = [ "ANGIOSPERMS", "BRYOPHYTA", "GYMNOSPERMS", "PTERIDOPHYTES", "CYCADOPHYTA", "HORSETAILS", "LIVERWORTS", "TREES" ]
 
 program_on = True
-while program_on == True:
+while program_on:
     print("MENU")
     print("WELCOME TO U.B.E.T")
     print("1) View plant group library ")
@@ -10,33 +12,30 @@ while program_on == True:
 
     menu = int(input("What would you like to do <3?: "))
     if menu == 1:
-        print("1]ANGIOSPERMS")
-        print("2]BRYOPHYTA")
-        print("3]GYMNOSPERMS")
-        print("4]PTERIDOPHYTES")
-        print("5]CYCADOPHYTA")
-        print("6]HORSETAILS")
-        print("7]LIVERWORTS")
-        print("8]TREES")
-        plant_category = int(input("See description of which plant group?"))
-        if plant_category == 1:
+        for i in range(len(plant_categories)):
+            print(f"{i + 1}] {plant_categories[i]}")
+        library_category = int(input("See description of which plant group?"))
+        if library_category == 1:
             print("goo goo gaga")
 
     elif menu == 2:
-        print()
-        print("What category best describes your plant?")
-        print("1]ANGIOSPERMS")
-        print("2]BRYOPHYTA")
-        print("3]GYMNOSPERMS")
-        print("4]PTERIDOPHYTES")
-        print("5]CYCADOPHYTA")
-        print("6]HORSETAILS")
-        print("7]LIVERWORTS")
-        print("8]TREES")
-        time.sleep(3)
+        def get_category():
+            for i in range(len(plant_categories)):
+                print(f"{i + 1}] {plant_categories[i]}")
+            category = int(input("Please enter your plant's category"))
+            return category
 
-    elif menu == 3:
-        program_on = False
-    else:
-        print("Invalid input! Please try again")
-        print()
+        def get_environment():
+            environment = input("What is environment is your plant currently in?")
+            return environment
+
+        def get_care(category, environment):
+            care = input("sah")
+            return care
+
+        plant_category = get_category()
+        plant_environment = get_environment()
+        plant_care = get_care(plant_category, plant_environment)
+        print(plant_category)
+
+
