@@ -38,4 +38,7 @@ while program_on:
         plant_care = get_care(plant_category, plant_environment)
         print(plant_category)
 
+    elif menu == 3:
+        program_on = False
+
 
