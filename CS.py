@@ -16,7 +16,7 @@ while program_on:
             print(f"{i + 1}] {plant_categories[i]}")
         library_category = int(input("See description of which plant group?"))
         if library_category == 1:
-            print("goo goo gaga")
+            print(" ")
 
     elif menu == 2:
         def get_category():
@@ -30,7 +30,7 @@ while program_on:
             return environment
 
         def get_care(category, environment):
-            care = input("sah")
+            care = input("")
             return care
 
         plant_category = get_category()
@@ -40,5 +40,6 @@ while program_on:
 
     elif menu == 3:
         program_on = False
+
 
 
