@@ -37,3 +37,12 @@ Select a plant group (e.g., Horsetails, Liverworts, Trees).
 Enter the plant’s environmental condition when prompted (e.g., shaded, sunny, damp).
 The program will display care instructions, including soil type, watering schedule, light requirements, and special notes.
 Follow the care tips to maintain a healthy and thriving plant.
+
+How to Use / Tutorial:
+1. Start the program.
+2. Pick an option in the main menu, plant groups, plant infos, exit
+2. A menu of plant groups will appear on the screen.
+3. Choose a plant group from the menu (e.g., Horsetails, Liverworts, Trees).
+4. Enter the plant’s environmental condition when asked (shaded, sunny, damp).
+5. The program will display the care information for the chosen plant group.
+6. Use the care tips to keep your plant healthy and thriving. more specific
