@@ -16,11 +16,14 @@ Provides detailed care instructions, including soil type, watering needs, light 
 Expandable — new plant groups and care information can be added easily in the future.
 
 Planned Inputs and Outputs
+
 Input
+
 User selects the plant group or category.
 User provides the current environmental conditions (e.g., shaded, sunny, damp, dry).
 
 Output
+
 Program shows customized plant care information based on the plant group and environmental conditions.
 Program displays a menu of available plant groups for reference.
 How to Use / Tutorial
