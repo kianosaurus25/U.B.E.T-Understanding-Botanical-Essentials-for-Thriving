@@ -1,31 +1,36 @@
 U.B.E.T-Understanding-Botanical-Essentials-for-Thriving
 
-Overview:
-This program helps users learn how to take care of different groups of plants. The user chooses a plant group and gives the plant’s environmental condition. The program then provides information on how to keep the plant alive and thriving.
+This program helps users understand the exact needs of their plants by analyzing two main inputs:
+Plant Group or Category – The user selects what type of plant they have (e.g., succulents, flowering plants, ferns, herbs, etc.). Each plant group has specific care requirements.
+Current Environmental Conditions – The user provides details about the plant’s environment, such as:
+Amount of sunlight (full sun, partial shade, low light)
+Level of soil moisture (dry, moist, wet)
+Humidity level
+Temperature around the plant
 
-Features:
-Shows a menu of plant groups.
-Lets the user select a group/category of plant.
-Asks for the plant’s environmental condition.
-Gives care instructions such as soil, water, light, and special notes.
-Can be expanded by adding more plant groups in the future.
+Features
+Displays a menu of plant groups for easy selection.
+Lets users choose a plant group or category (e.g., Horsetails, Liverworts, Trees).
+Prompts users to enter the plant’s current environmental conditions, such as sunlight, soil moisture, humidity, or temperature.
+Provides detailed care instructions, including soil type, watering needs, light requirements, and any special tips.
+Expandable — new plant groups and care information can be added easily in the future.
 
-Planned Inputs and Outputs:
+Planned Inputs and Outputs
+Input
+User selects the plant group or category.
+User provides the current environmental conditions (e.g., shaded, sunny, damp, dry).
 
-Input:
-The user chooses the group/category of plant.
-The user provides the environmental condition.
-
-
-Output:
-The program displays plant care information based on the chosen group and condition.
-The program presents a menu of available plant groups.
-
-How to Use / Tutorial:
-1. Start the program.
-2. Pick an option in the main menu, plant groups, plant infos, exit
-2. A menu of plant groups will appear on the screen.
-3. Choose a plant group from the menu (e.g., Horsetails, Liverworts, Trees).
-4. Enter the plant’s environmental condition when asked (shaded, sunny, damp).
-5. The program will display the care information for the chosen plant group.
-6. Use the care tips to keep your plant healthy and thriving.
+Output
+Program shows customized plant care information based on the plant group and environmental conditions.
+Program displays a menu of available plant groups for reference.
+How to Use / Tutorial
+Start the program.
+On the main menu, choose an option:
+Plant Groups – view and select plant categories
+Plant Infos – see care tips for selected plants
+Exit – close the program
+A menu of plant groups will appear on the screen.
+Select a plant group (e.g., Horsetails, Liverworts, Trees).
+Enter the plant’s environmental condition when prompted (e.g., shaded, sunny, damp).
+The program will display care instructions, including soil type, watering schedule, light requirements, and special notes.
+Follow the care tips to maintain a healthy and thriving plant.
