@@ -96,9 +96,9 @@ def view_library(plant_library):
         print("Care:", plant_library[n]["care"])
         print()
 
-#def plant_category():
+def plant_category():
 
-#def plant_environment():
+def plant_environment():
     
 #def  plant_care():
     
