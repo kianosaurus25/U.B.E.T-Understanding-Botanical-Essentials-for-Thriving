@@ -98,9 +98,9 @@ def view_library(plant_library):
 
 #def plant_category():
 
-def plant_environment():
+#def plant_environment():
     
-def  plant_care():
+#def  plant_care():
     
 program_on = True
 while program_on == True:
