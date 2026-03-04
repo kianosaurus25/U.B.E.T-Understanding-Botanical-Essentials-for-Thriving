@@ -1,4 +1,4 @@
-U.B.E.T-Understanding-Botanical-Essentials-for-Thriving
+U.B.E.T -Understanding-Botanical-Essentials-for-Thriving
 
 This program helps users understand the exact needs of their plants by analyzing two main inputs:
 Plant Group or Category – The user selects what type of plant they have (e.g., succulents, flowering plants, ferns, herbs, etc.). Each plant group has specific care requirements.
