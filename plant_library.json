@@ -9,7 +9,7 @@
         "name": "Bryophyta (Mosses)",
         "description": "Small plants that grow in damp woodland or moist areas.",
         "care": "Keep environment damp, provide bright indirect light, and use nutrient-rich soil like peat.",
-        "fact":"Fun fact:  "
+        "fact":"Fun fact: They are poikilohydry, allowing them to live in a state of suspended animation during extreme conditions and revive instantly upon hydration. (Survival Masters)"
     },
     {
         "name": "Gymnosperms",
@@ -21,7 +21,7 @@
         "name": "Pteridophytes (Ferns)",
         "description": "Plants with roots, stems, and leaves.",
         "care": "Place in filtered light, keep soil damp, increase humidity, use well-draining mix, and fertilize lightly in growing season.",
-        "fact"
+        "fact": "Fun fact: A single fern plant can release millions of spores, which are small enough to fit on the tip of a pin."
     },
     {
         "name": "Cycadophyta (Cycads)",
