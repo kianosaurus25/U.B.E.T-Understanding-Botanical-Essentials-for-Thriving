@@ -2,41 +2,49 @@
     {
         "name": "Angiosperms",
         "description": "Flowering plants that bear flowers and fruits.",
-        "care": "Give direct or indirect sunlight, keep soil moist (not waterlogged), and use nutrient-rich soil."
+        "care": "Give direct or indirect sunlight, keep soil moist (not waterlogged), and use nutrient-rich soil.",
+        "fact": "Fun fact: This is plant group is the most successful group of land plants, they make up 80% of living plant species today."
     },
     {
         "name": "Bryophyta (Mosses)",
         "description": "Small plants that grow in damp woodland or moist areas.",
-        "care": "Keep environment damp, provide bright indirect light, and use nutrient-rich soil like peat."
+        "care": "Keep environment damp, provide bright indirect light, and use nutrient-rich soil like peat.",
+        "fact":"What does the facts say? "
     },
     {
         "name": "Gymnosperms",
         "description": "Vascular plants that produce seeds and pollen instead of spores.",
-        "care": "Provide full sun, well-draining soil, and proper moisture. Avoid overly wet soil to prevent disease."
+        "care": "Provide full sun, well-draining soil, and proper moisture. Avoid overly wet soil to prevent disease.",
+        "fact": "Did you know? This plant group is believed to go back 380 million years"
     },
     {
         "name": "Pteridophytes (Ferns)",
         "description": "Plants with roots, stems, and leaves.",
-        "care": "Place in filtered light, keep soil damp, increase humidity, use well-draining mix, and fertilize lightly in growing season."
+        "care": "Place in filtered light, keep soil damp, increase humidity, use well-draining mix, and fertilize lightly in growing season.",
+        "fact"
     },
     {
         "name": "Cycadophyta (Cycads)",
         "description": "Palm-like plants with thick trunks and evergreen leaves.",
-        "care": "Water when the top 2 inches of soil dry, avoid harsh direct sun, use fertilizer with NPK + magnesium, and check for pests."
+        "care": "Water when the top 2 inches of soil dry, avoid harsh direct sun, use fertilizer with NPK + magnesium, and check for pests.",
+        "fact"
     },
     {
         "name": "Horsetails",
         "description": "Fern-like plants that grow in damp or wet areas.",
-        "care": "Provide moist to wet soil, full sun to partial shade, and consistent moisture. Use pots/barriers to prevent invasiveness."
+        "care": "Provide moist to wet soil, full sun to partial shade, and consistent moisture. Use pots/barriers to prevent invasiveness.",
+        "fact"
     },
     {
         "name": "Liverworts",
         "description": "Small plants thriving in cool, shaded, humid environments.",
-        "care": "Keep consistently moist, avoid direct sunlight, and protect from drying winds."
+        "care": "Keep consistently moist, avoid direct sunlight, and protect from drying winds.",
+        "fact"
     },
     {
         "name": "Trees",
         "description": "Large plants that grow in many climates with deep root systems.",
-        "care": "Use well-drained soil, water regularly when young, give full sun to partial shade, prune for health, and mulch the base."
+        "care": "Use well-drained soil, water regularly when young, give full sun to partial shade, prune for health, and mulch the base.",
+        "fact"
     }
 ]
