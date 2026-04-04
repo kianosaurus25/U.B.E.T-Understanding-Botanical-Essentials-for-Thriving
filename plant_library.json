@@ -20,31 +20,31 @@
     {
         "name": "Pteridophytes (Ferns)",
         "description": "Plants with roots, stems, and leaves.",
-        "care": "Place in filtered light, keep soil damp, increase humidity, use well-draining mix, and fertilize lightly in growing season.",
+        "care": "Place in filtered light, keep soil damp, increase humidity, use well-draining mix, and fertilize lightly in growing season."
         "fact": "Fun fact: A single fern plant can release millions of spores, which are small enough to fit on the tip of a pin."
     },
     {
         "name": "Cycadophyta (Cycads)",
         "description": "Palm-like plants with thick trunks and evergreen leaves.",
-        "care": "Water when the top 2 inches of soil dry, avoid harsh direct sun, use fertilizer with NPK + magnesium, and check for pests.",
-        "fact"
+        "care": "Water when the top 2 inches of soil dry, avoid harsh direct sun, use fertilizer with NPK + magnesium, and check for pests."
+        "fact": "Did you know? Many cycads are highly toxic to animals, including humans."
     },
     {
         "name": "Horsetails",
         "description": "Fern-like plants that grow in damp or wet areas.",
-        "care": "Provide moist to wet soil, full sun to partial shade, and consistent moisture. Use pots/barriers to prevent invasiveness.",
-        "fact"
+        "care": "Provide moist to wet soil, full sun to partial shade, and consistent moisture. Use pots/barriers to prevent invasiveness."
+        "fact" : " Did you know? Ancient horsetails once grew over 30 meters tall."
     },
     {
         "name": "Liverworts",
         "description": "Small plants thriving in cool, shaded, humid environments.",
         "care": "Keep consistently moist, avoid direct sunlight, and protect from drying winds.",
-        "fact"
+        "fact" : "Did you know? Liverworts have special oil bodies inside their cells that are found in no other plant group on Earth."
     },
     {
         "name": "Trees",
         "description": "Large plants that grow in many climates with deep root systems.",
-        "care": "Use well-drained soil, water regularly when young, give full sun to partial shade, prune for health, and mulch the base.",
-        "fact"
+        "care": "Use well-drained soil, water regularly when young, give full sun to partial shade, prune for health, and mulch the base."
+        "fact" : " Did you know? The oldest known tree is over 4,800 years old and is still alive today."
     }
 ]
