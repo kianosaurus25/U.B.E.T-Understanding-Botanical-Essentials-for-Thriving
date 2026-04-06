@@ -1,6 +1,8 @@
 import time
 import json
 
+
+
 try:
     with open("plant_library.json", "r") as file:
         plant_library = json.load(file)
@@ -18,22 +20,31 @@ except json.JSONDecodeError as e:
     plant_library = []
     plant_data = {}
 
-def view_library(plant_library):
-   if menu ==  1:
-        for i in range(len(plant_library)):
-            print(f"{i + 1}. {plant_library[i]["name"]}")
-        category =  int(input("Which category would you want to read about?"))
-        n = category - 1
-        print("Name:", plant_library[n]["name"])
-        print("Description:", plant_library[n]["description"])
-        print("Care:", plant_library[n]["care"])
-        print()
-#def plant_category():
 
-#def plant_environment():
-    
-#def plant_care():
-    
+    def view_library(plant_library):
+       if menu ==  1:
+            for i in range(len(plant_library)):
+                print(f"{i + 1}. {plant_library[i]["name"]}")
+            category =  int(input("Which category would you want to read about?"))
+            n = category - 1
+            print("Name:", plant_library[n]["name"])
+            print("Description:", plant_library[n]["description"])
+            print("Care:", plant_library[n]["care"])
+            print()
+
+
+    def plant_category(plant_data):
+        category = input("What plant group is your plant in?:  ")
+        if category in plant_data:
+            print("wow")
+
+
+    def plant_environment(plant_data):
+        print("i am a dog")
+
+    def plant_care(plant_data):
+        print("i am a mutt")
+
 program_on = True
 while program_on == True:
     time.sleep(0.5)
@@ -86,11 +97,10 @@ while program_on == True:
     menu = int(input("What would you like to do?: "))
     if menu == 1:
         view_library(plant_library)
-
     elif menu == 2:
-        plant_category()
-        plant_environment()
-        plant_care()
+        plant_category(plant_data)
+        plant_environment(plant_data)
+        plant_care(plant_data)
 
     elif menu == 3:
         program_on = False
