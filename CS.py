@@ -19,7 +19,7 @@ except json.JSONDecodeError as e:
     plant_data = {}
 
 def view_library(plant_library):
-   if menu ==  1:
+    if menu ==  1:
         for i in range(len(plant_library)):
             print(f"{i + 1}. {plant_library[i]["name"]}")
         category =  int(input("Which category would you want to read about?"))
@@ -36,7 +36,7 @@ def view_library(plant_library):
     
 program_on = True
 while program_on == True:
-    time.sleep(0.5)
+    time.sleep(1)
     asciART = """ 
      █     █░▓█████  ██▓     ▄████▄   ▒█████   ███▄ ▄███▓▓█████    ▄▄▄█████▓ ▒█████ 
     ▓█░ █ ░█░▓█   ▀ ▓██▒    ▒██▀ ▀█  ▒██▒  ██▒▓██▒▀█▀ ██▒▓█   ▀    ▓  ██▒ ▓▒▒██▒  ██
@@ -60,7 +60,6 @@ while program_on == True:
                                  ░        ░   ░           ░      
         """
     print(asciART)
-    time.sleep(0.5)
     asciART =  """          
                        ███▄ ▄███▓▓█████  ███▄    █  █    ██ 
                       ▓██▒▀█▀ ██▒▓█   ▀  ██ ▀█   █  ██  ▓██▒
