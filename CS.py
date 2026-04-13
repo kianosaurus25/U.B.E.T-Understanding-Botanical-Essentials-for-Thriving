@@ -20,20 +20,31 @@ except json.JSONDecodeError as e:
     plant_library = []
     plant_data = {}
 
-
     def view_library(plant_library):
-       if menu ==  1:
-            for i in range(len(plant_library)):
-                print(f"{i + 1}. {plant_library[i]["name"]}")
-            category =  int(input("Which category would you want to read about?"))
-            n = category - 1
-            print("Name:", plant_library[n]["name"])
-            print("Description:", plant_library[n]["description"])
-            print("Care:", plant_library[n]["care"])
-            print()
+       if not plant_library:
+        print("Plant library is empty.")
+        return
+    print("PLANT LIBRARY:")
+    for i in range(len(plant_library)):
+        print(f"{i + 1}. {plant_library[i]['name']}")
+    try:
+        choice = int(input("Choose a plant: "))
+        if choice < 1 or choice > len(plant_library):
+            print("Invalid choice.")
+            return
+    except:
+        print("Please enter a number.")
+        return
+        
+    plant = plant_library[choice - 1]
+    print("PLANT INFO")
+    print("Name:", plant["name"])
+    print("Description:", plant["description"])
+    print("Care:", plant["care"])
+    print("Fact:", plant["fact"])
+    
 
-
-    def plant_category(plant_data):
+    def plant_category(plant_data): 
         category = input("What plant group is your plant in?:  ")
         if category in plant_data:
             print("wow")
