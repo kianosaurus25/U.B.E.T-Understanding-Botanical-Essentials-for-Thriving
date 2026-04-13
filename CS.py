@@ -20,13 +20,20 @@ except json.JSONDecodeError as e:
     plant_library = []
     plant_data = {}
 
-    def view_library(plant_library):
-       if not plant_library:
+# ===================== OPTION 1 =====================
+def view_library(plant_library):
+    if not plant_library:
         print("Plant library is empty.")
         return
-    print("PLANT LIBRARY:")
+
+    # print names
+    print("\nPLANT LIBRARY:\n")
     for i in range(len(plant_library)):
         print(f"{i + 1}. {plant_library[i]['name']}")
+
+    print()
+
+    # choose
     try:
         choice = int(input("Choose a plant: "))
         if choice < 1 or choice > len(plant_library):
@@ -35,26 +42,60 @@ except json.JSONDecodeError as e:
     except:
         print("Please enter a number.")
         return
-        
+
     plant = plant_library[choice - 1]
-    print("PLANT INFO")
+
+    # display info
+    print("\n--- PLANT INFO ---")
     print("Name:", plant["name"])
     print("Description:", plant["description"])
     print("Care:", plant["care"])
     print("Fact:", plant["fact"])
-    
-
-    def plant_category(plant_data): 
-        category = input("What plant group is your plant in?:  ")
-        if category in plant_data:
-            print("wow")
+    print()
 
 
-    def plant_environment(plant_data):
-        print("i am a dog")
+# ===================== OPTION 2 =====================
+def plant_category(plant_data):
+    category = input("Enter plant category: ").upper()
 
-    def plant_care(plant_data):
-        print("i am a mutt")
+    if category not in plant_data:
+        print("Invalid category.")
+        return None
+
+    return category
+
+
+def plant_environment():
+    print("\nEnter plant conditions:")
+
+    light = input("Light: ").lower()
+    water = input("Water: ").lower()
+    soil = input("Soil: ").lower()
+
+    return {
+        "light": light,
+        "water": water,
+        "soil": soil
+    }
+
+
+def plant_care(category, env, plant_data):
+    correct = plant_data[category]
+
+    print("\n--- CARE CHECK ---")
+
+    for key in correct:
+        expected = correct[key].lower()
+        user_val = env[key]
+
+        if user_val not in expected:
+            print(f"{key.capitalize()} is not ideal.")
+            print(f"→ Suggested: {expected}")
+        else:
+            print(f"{key.capitalize()} is good!")
+
+    print()
+
 
 program_on = True
 while program_on == True:
