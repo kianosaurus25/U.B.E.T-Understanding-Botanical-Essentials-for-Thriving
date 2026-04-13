@@ -1,6 +1,8 @@
 import time
 import json
 
+
+
 try:
     with open("plant_library.json", "r") as file:
         plant_library = json.load(file)
@@ -18,22 +20,83 @@ except json.JSONDecodeError as e:
     plant_library = []
     plant_data = {}
 
+# ===================== OPTION 1 =====================
 def view_library(plant_library):
-   if menu ==  1:
-        for i in range(len(plant_library)):
-            print(f"{i + 1}. {plant_library[i]["name"]}")
-        category =  int(input("Which category would you want to read about?"))
-        n = category - 1
-        print("Name:", plant_library[n]["name"])
-        print("Description:", plant_library[n]["description"])
-        print("Care:", plant_library[n]["care"])
-        print()
-#def plant_category():
+    if not plant_library:
+        print("Plant library is empty.")
+        return
 
-#def plant_environment():
-    
-#def plant_care():
-    
+    # print names
+    print("\nPLANT LIBRARY:\n")
+    for i in range(len(plant_library)):
+        print(f"{i + 1}. {plant_library[i]['name']}")
+
+    print()
+
+    # choose
+    try:
+        choice = int(input("Choose a plant: "))
+        if choice < 1 or choice > len(plant_library):
+            print("Invalid choice.")
+            return
+    except:
+        print("Please enter a number.")
+        return
+
+    plant = plant_library[choice - 1]
+
+    # display info
+    print("\n--- PLANT INFO ---")
+    print("Name:", plant["name"])
+    print("Description:", plant["description"])
+    print("Care:", plant["care"])
+    print("Fact:", plant["fact"])
+    print()
+
+
+# ===================== OPTION 2 =====================
+def plant_category(plant_data):
+    category = input("Enter plant category: ").upper()
+
+    if category not in plant_data:
+        print("Invalid category.")
+        return None
+
+    return category
+
+
+def plant_environment():
+    print("\nEnter plant conditions:")
+
+    light = input("Light: ").lower()
+    water = input("Water: ").lower()
+    soil = input("Soil: ").lower()
+
+    return {
+        "light": light,
+        "water": water,
+        "soil": soil
+    }
+
+
+def plant_care(category, env, plant_data):
+    correct = plant_data[category]
+
+    print("\n--- CARE CHECK ---")
+
+    for key in correct:
+        expected = correct[key].lower()
+        user_val = env[key]
+
+        if user_val not in expected:
+            print(f"{key.capitalize()} is not ideal.")
+            print(f"→ Suggested: {expected}")
+        else:
+            print(f"{key.capitalize()} is good!")
+
+    print()
+
+
 program_on = True
 while program_on == True:
     time.sleep(0.5)
@@ -86,11 +149,10 @@ while program_on == True:
     menu = int(input("What would you like to do?: "))
     if menu == 1:
         view_library(plant_library)
-
     elif menu == 2:
-        plant_category()
-        plant_environment()
-        plant_care()
+        plant_category(plant_data)
+        plant_environment(plant_data)
+        plant_care(plant_data)
 
     elif menu == 3:
         program_on = False
