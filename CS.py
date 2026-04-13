@@ -28,7 +28,7 @@ def view_library(plant_library):
 
     print("\nPLANT LIBRARY:\n")
     for i in range(len(plant_library)):
-        print(f"{i + 1}. {plant_library[i]['name']}")
+        print(f"{i + 1}. {plant_library[i]["name"]}")
 
     print()
 
