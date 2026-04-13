@@ -20,20 +20,18 @@ except json.JSONDecodeError as e:
     plant_library = []
     plant_data = {}
 
-# ===================== OPTION 1 =====================
+
 def view_library(plant_library):
     if not plant_library:
         print("Plant library is empty.")
         return
 
-    # print names
     print("\nPLANT LIBRARY:\n")
     for i in range(len(plant_library)):
-        print(f"{i + 1}. {plant_library[i]['name']}")
+        print(f"{i + 1}. {plant_library[i]["name"]}")
 
     print()
 
-    # choose
     try:
         choice = int(input("Choose a plant: "))
         if choice < 1 or choice > len(plant_library):
@@ -45,8 +43,7 @@ def view_library(plant_library):
 
     plant = plant_library[choice - 1]
 
-    # display info
-    print("\n--- PLANT INFO ---")
+    print("PLANT INFO")
     print("Name:", plant["name"])
     print("Description:", plant["description"])
     print("Care:", plant["care"])
@@ -54,7 +51,6 @@ def view_library(plant_library):
     print()
 
 
-# ===================== OPTION 2 =====================
 def plant_category(plant_data):
     category = input("Enter plant category: ").upper()
 
@@ -68,9 +64,9 @@ def plant_category(plant_data):
 def plant_environment():
     print("\nEnter plant conditions:")
 
-    light = input("Light: ").lower()
-    water = input("Water: ").lower()
-    soil = input("Soil: ").lower()
+    light = input("Light: ")
+    water = input("Water: ")
+    soil = input("Soil: ")
 
     return {
         "light": light,
@@ -82,19 +78,6 @@ def plant_environment():
 def plant_care(category, env, plant_data):
     correct = plant_data[category]
 
-    print("\n--- CARE CHECK ---")
-
-    for key in correct:
-        expected = correct[key].lower()
-        user_val = env[key]
-
-        if user_val not in expected:
-            print(f"{key.capitalize()} is not ideal.")
-            print(f"→ Suggested: {expected}")
-        else:
-            print(f"{key.capitalize()} is good!")
-
-    print()
 
 
 program_on = True
