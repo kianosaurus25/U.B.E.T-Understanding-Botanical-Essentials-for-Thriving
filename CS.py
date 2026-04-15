@@ -75,12 +75,12 @@ def plant_environment():
     }
 
 
-def plant_care(category, env, plant_data):
+def plant_care(category, check, plant_data):
     correct = plant_data[category]
 
     fr data in correct:
         correctCare = correct[data]
-        user = env[data]
+        user = check[data]
 
         if user not in correctCare:
             print(f"{data} is bad")
@@ -142,9 +142,10 @@ while program_on == True:
     if menu == 1:
         view_library(plant_library)
     elif menu == 2:
-        plant_category(plant_data)
-        plant_environment(plant_data)
-        plant_care(plant_data)
+        category = plant_category(plant_data)
+    if category:
+        check = plant_environment()
+        plant_care(category, check, plant_data)
 
     elif menu == 3:
         program_on = False
