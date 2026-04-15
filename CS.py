@@ -26,7 +26,7 @@ def view_library(plant_library):
         print("Plant library is empty.")
         return
 
-    print("\nPLANT LIBRARY:\n")
+    print("PLANT LIBRARY:")
     for i in range(len(plant_library)):
         print(f"{i + 1}. {plant_library[i]["name"]}")
 
@@ -62,7 +62,7 @@ def plant_category(plant_data):
 
 
 def plant_environment():
-    print("\nEnter plant conditions:")
+    print("Enter plant conditions:")
 
     light = input("Light: ")
     water = input("Water: ")
@@ -78,7 +78,16 @@ def plant_environment():
 def plant_care(category, env, plant_data):
     correct = plant_data[category]
 
+    fr data in correct:
+        correctCare = correct[data]
+        user = env[data]
 
+        if user not in correctCare:
+            print(f"{data} is bad")
+            print(f"Your plant should have: {correctCare}")
+        else:
+            print(f"{data} is gud"
+    
 
 program_on = True
 while program_on == True:
