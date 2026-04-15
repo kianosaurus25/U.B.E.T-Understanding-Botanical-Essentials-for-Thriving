@@ -1,16 +1,16 @@
 {
 "ANGIOSPERMS": {
-        "light": "direct/indirect sun",
+        "light": "direct/indirect",
         "water": "moist",
         "soil": "nutrient-rich"
     },
     "BRYOPHYTA": {
-        "light": "indirect sun",
+        "light": "indirect",
         "water": "damp",
         "soil": "peat-rich"
     },
     "GYMNOSPERMS": {
-        "light": "full sun",
+        "light": "direct",
         "water": "moderate",
         "soil": "well drained"
     },
@@ -20,22 +20,22 @@
         "soil": "well drained"
     },
     "CYCADOPHYTA": {
-        "light": "avoid harsh sun",
+        "light": "direct/filtered",
         "water": "when top soil dry",
         "soil": "NPK fertilizer"
     },
     "HORSETAILS": {
-        "light": "sun/partial",
+        "light": "direct/indirect",
         "water": "wet/moist",
         "soil": "well-drained"
     },
     "LIVERWORTS": {
-        "light": "shade",
+        "light": "indirect",
         "water": "constant moisture",
         "soil": "moist "
     },
     "TREES": {
-        "light": "sun",
+        "light": "direct",
         "water": "moderate",
         "soil": "well-drained"
     }
