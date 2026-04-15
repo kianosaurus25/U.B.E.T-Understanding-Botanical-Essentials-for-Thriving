@@ -80,8 +80,13 @@ def plant_care(category, env, plant_data):
 
     fr data in correct:
         correctCare = correct[data]
-        t
-        
+        user = env[data]
+
+        if user not in correctCare:
+            print(f"{data} is bad")
+            print(f"Your plant should have: {correctCare}")
+        else:
+            print(f"{data} is gud"
     
 
 program_on = True
