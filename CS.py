@@ -78,7 +78,7 @@ def plant_environment():
 def plant_care(category, check, plant_data):
     correct = plant_data[category]
 
-    fr data in correct:
+    for data in correct:
         correctCare = correct[data]
         user = check[data]
 
@@ -86,7 +86,7 @@ def plant_care(category, check, plant_data):
             print(f"{data} is bad")
             print(f"Your plant should have: {correctCare}")
         else:
-            print(f"{data} is gud"
+            print(f"{data} is gud")
     
 
 program_on = True
