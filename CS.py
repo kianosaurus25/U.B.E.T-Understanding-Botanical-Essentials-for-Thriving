@@ -166,9 +166,9 @@ while program_on == True:
         view_library(plant_library)
     elif menu == 2:
         category = plant_category(plant_data)
-    if category:
-        check = plant_environment()
-        plant_care(category, check, plant_data)
+        if category:
+            check = plant_environment()
+            plant_care(category, check, plant_data)
 
     elif menu == 3:
         program_on = False
