@@ -2,19 +2,20 @@ import time
 import json
 
 
-# This loads and updates the json files.
+# This tries to load and update the json files.
 try:
+    #Load plant library
     with open("plant_library.json", "r") as file:
         plant_library = json.load(file)
-
+    #Load plant data
     with open("plant_data.json", "r") as file:
         plant_data = json.load(file)
-
+#File is missing
 except FileNotFoundError as e:
     print("Error: The file 'data.json' was not found.")
     plant_library = []
     plant_data = {}
-
+#Json is broken
 except json.JSONDecodeError as e:
     print(f"Failed to decode JSON: {e}")
     plant_library = []
@@ -22,16 +23,17 @@ except json.JSONDecodeError as e:
 
 
 def view_library(plant_library):
+    #check if library is empty
     if not plant_library:
         print("Plant library is empty.")
         return
-
+    #Prints the names
     print("PLANT LIBRARY:")
     for i in range(len(plant_library)):
         print(f"{i + 1}. {plant_library[i]["name"]}")
-
     print()
 
+    #Checks if choice is valid
     try:
         choice = int(input("Choose a plant: "))
         if choice < 1 or choice > len(plant_library):
@@ -41,6 +43,7 @@ def view_library(plant_library):
         print("Please enter a number.")
         return
 
+    #Get selected plant
     plant = plant_library[choice - 1]
 
     print("PLANT INFO")
@@ -55,10 +58,14 @@ def plant_category(plant_data, plant_library):
     print()
     print("******PLANT CATEGORY******")
     time.sleep(1)
+    #Shows available plant categories
     for i in range(len(plant_library)):
         print(plant_library[i]["name"])
+
+    #Gets user inputs and converts it to uppercase
     category = input("Enter plant category: ").upper()
 
+    #Checks if category is valid
     if category not in plant_data:
         print("Invalid category (Either doesn't exist, or you just spelled it wrong).")
         time.sleep(3)
@@ -73,10 +80,11 @@ def plant_environment():
     time.sleep(3)
     print("Enter plant conditions:")
 
+    #Get user inputs
     light = input("Light(direct,indirect, or filtered): ")
     water = input("Water(moist,damp, or wet): ")
     soil = input("Soil(nutrient rich, peat rich, well drained or soggy): ")
-
+    #Stores them in a dictionary
     return {
         "light": light,
         "water": water,
@@ -182,11 +190,14 @@ while program_on == True:
     print("3) Quit")
     time.sleep(0.5)
     menu = int(input("What would you like to do?: "))
+
+
     if menu == 1:
         view_library(plant_library)
+
     elif menu == 2:
         category = plant_category(plant_data, plant_library)
-        if category:
+        if category: #only continues if the category is valid
             check = plant_environment()
             plant_care(category, check, plant_data)
 
@@ -195,7 +206,7 @@ while program_on == True:
     else:
         print("Invalid input! Please try again")
         print()
-
+        time.sleep(3)
 
 
 
