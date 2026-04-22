@@ -52,18 +52,25 @@ def view_library(plant_library):
 
 
 def plant_category(plant_data, plant_library):
+    print()
+    print("******PLANT CATEGORY******")
+    time.sleep(1)
     for i in range(len(plant_library)):
         print(plant_library[i]["name"])
     category = input("Enter plant category: ").upper()
 
     if category not in plant_data:
-        print("Invalid category.")
+        print("Invalid category (Either doesn't exist, or you just spelled it wrong).")
+        time.sleep(3)
         return None
 
     return category
 
 
 def plant_environment():
+    print()
+    print("******PLANT ENVIRONMENT******")
+    time.sleep(3)
     print("Enter plant conditions:")
 
     light = input("Light(direct,indirect, or filtered): ")
@@ -78,17 +85,28 @@ def plant_environment():
 
 # This checks if the user is taking good care of their plants using the plant data they have inserted.
 def plant_care(category, check, plant_data):
+    print()
+    print("******ANALYZING******")
+    time.sleep(3)
+    # Get the correct care data from the given category
     correct = plant_data[category]
 
+    # This loop loops for each care requirement
     for data in correct:
+        # Get the correct value for each care requirement
         correctCare = correct[data]
+
+        # tHe purpose of the check is to store the users input for each care requirement
         user = check[data]
 
-        if user not in correctCare:
-            print(f"{data} is bad")
-            print(f"Your plant should have: {correctCare}")
-        else:
-            print(f"{data} is gud")
+        #Checks if the user is NOT taking care of their plant properly, or if the user left a blank input.
+        if user == "" or user not in correctCare:
+            print(f"{data} is bad!")
+            print(f"It should be: {correctCare}")
+            time.sleep(3)
+            print()
+        else: #User is good at taking care of their plant
+            print(f"{data} is good!")
     
 
 program_on = True
