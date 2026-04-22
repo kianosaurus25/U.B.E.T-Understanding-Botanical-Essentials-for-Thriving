@@ -22,21 +22,21 @@
     "CYCADOPHYTA": {
         "light": "direct/filtered",
         "water": "when top soil dry",
-        "soil": "NPK fertilizer"
+        "soil": "well drained"
     },
     "HORSETAILS": {
         "light": "direct/indirect",
         "water": "wet/moist",
-        "soil": "well-drained"
+        "soil": "soggy"
     },
     "LIVERWORTS": {
         "light": "indirect",
-        "water": "constant moisture",
-        "soil": "moist "
+        "water": "damp",
+        "soil": "peat-rich "
     },
     "TREES": {
         "light": "direct",
-        "water": "moderate",
+        "water": "moist",
         "soil": "well-drained"
     }
 }
