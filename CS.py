@@ -2,7 +2,7 @@ import time
 import json
 
 
-
+# This loads and updates the json files.
 try:
     with open("plant_library.json", "r") as file:
         plant_library = json.load(file)
@@ -74,7 +74,7 @@ def plant_environment():
         "soil": soil
     }
 
-
+# This checks if the user is taking good care of their plants using the plant data they have inserted.
 def plant_care(category, check, plant_data):
     correct = plant_data[category]
 
@@ -126,7 +126,6 @@ while program_on == True:
                       ░  ░      ░ ░ ░  ░░ ░░   ░ ▒░░░▒░ ░ ░ 
                       ░      ░      ░      ░   ░ ░  ░░░ ░ ░ 
                       ░      ░  ░         ░    ░      
-
                   ⣀⣴⢾⣿⡷⣦⣄⡀⠀⢀⣠⡴⠒⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⣶⠶⣦⣤⣀⣀⣠⡾⠋⠀⠸⡇⠀⠀⣈⡽⠞⠉⠀⠀⢠⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⢻⡆⠀⠀⠉⠛⠻⠶⣦⣤⣄⣀⣠⡾⠟⠀⠀⠀⠀⢀⡾⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -153,7 +152,7 @@ while program_on == True:
     """
 
     print(asciART)
-
+# Shows users menu options.
     time.sleep(0.5)
     print("1) View plant group library ")
     time.sleep(0.5)
