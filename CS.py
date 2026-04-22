@@ -107,6 +107,7 @@ def plant_care(category, check, plant_data):
             print()
         else: #User is good at taking care of their plant
             print(f"{data} is good!")
+            print()
     
 
 program_on = True
