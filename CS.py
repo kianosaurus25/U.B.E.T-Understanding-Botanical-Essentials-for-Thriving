@@ -66,9 +66,9 @@ def plant_category(plant_data, plant_library):
 def plant_environment():
     print("Enter plant conditions:")
 
-    light = input("Light: ")
-    water = input("Water: ")
-    soil = input("Soil: ")
+    light = input("Light(direct,indirect, or filtered): ")
+    water = input("Water(moist,damp, or wet): ")
+    soil = input("Soil(nutrient rich, peat rich, well drained or soggy): ")
 
     return {
         "light": light,
