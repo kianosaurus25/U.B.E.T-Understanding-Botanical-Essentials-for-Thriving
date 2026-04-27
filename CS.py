@@ -60,16 +60,20 @@ def plant_category(plant_data, plant_library):
     time.sleep(1)
     #Shows available plant categories
     for i in range(len(plant_library)):
-        print(plant_library[i]["name"])
-
-    #Gets user inputs and converts it to uppercase
-    category = input("Enter plant category: ").upper()
-
-    #Checks if category is valid
-    if category not in plant_data:
-        print("Invalid category (Either doesn't exist, or you just spelled it wrong).")
+        print(f"{i + 1 }.{plant_library[i]["name"]}")
+    print()
+    try:
+        choice1 = int(input("Choose your plant's category: "))
+        if choice1 < 1 or choice1 > len(plant_library):
+            print("Invalid choice.")
+            return
+    except:
+        print("Please enter a number.")
         time.sleep(3)
         return None
+
+    #Gets user inputs and converts it to uppercase
+    category = plant_library[choice1 - 1]["name"].upper()
 
     return category
 
