@@ -12,17 +12,17 @@
     "GYMNOSPERMS": {
         "light": "direct",
         "water": "moist",
-        "soil": "well drained"
+        "soil": "well-drained"
     },
     "PTERIDOPHYTES": {
         "light": "filtered",
         "water": "damp",
-        "soil": "well drained"
+        "soil": "well-drained"
     },
     "CYCADOPHYTA": {
         "light": "direct/filtered",
         "water": "dry",
-        "soil": "well drained"
+        "soil": "well-drained"
     },
     "HORSETAILS": {
         "light": "direct/indirect",
